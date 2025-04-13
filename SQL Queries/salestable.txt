@@ -1,0 +1,27 @@
+10/25/2024, 4:44:42 PM
+-------------------------------------------------------------------------------------------
+"CREATE TABLE ADMIN.Sales 
+    ( 
+     Sales_ID     NUMBER GENERATED ALWAYS AS IDENTITY 
+        ( START WITH 1 CACHE 20 ) , 
+     Customer_ID  NUMBER , 
+     Order_ID     NUMBER , 
+     Employee_ID  NUMBER , 
+     Promotion_ID NUMBER , 
+     Product_ID   NUMBER , 
+     Store_ID     NUMBER , 
+     Date_ID      NUMBER , 
+     Amount       VARCHAR2 (20) , 
+     Quantity     VARCHAR2 (20) 
+    ) 
+    LOGGING"
+Table ADMIN.SALES created.
+
+
+10/25/2024, 4:44:42 PM
+-------------------------------------------------------------------------------------------
+"ALTER TABLE ADMIN.Sales 
+    ADD CONSTRAINT Sales_PK PRIMARY KEY ( Sales_ID ) 
+    USING INDEX LOGGING"
+Table ADMIN.SALES altered.
+
