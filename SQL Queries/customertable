@@ -1,0 +1,22 @@
+10/22/2024, 7:28:35 PM
+-------------------------------------------------------------------------------------------
+"CREATE TABLE ADMIN.CUSTOMER 
+    ( 
+     Customer_ID      NUMBER GENERATED ALWAYS AS IDENTITY 
+        ( START WITH 1 CACHE 20 ) , 
+     First_Name       VARCHAR2 (128) , 
+     Last_Name        VARCHAR2 (128) , 
+     Contact_Number   VARCHAR2 (20) , 
+     Customer_Email   VARCHAR2 (20) , 
+     Customer_Address VARCHAR2 (20) 
+    ) 
+    LOGGING"
+Table ADMIN.CUSTOMER created.
+
+
+10/22/2024, 7:28:35 PM
+-------------------------------------------------------------------------------------------
+"ALTER TABLE ADMIN.CUSTOMER 
+    ADD CONSTRAINT CUSTOMER_PK PRIMARY KEY ( Customer_ID ) 
+    USING INDEX LOGGING"
+Table ADMIN.CUSTOMER altered.
