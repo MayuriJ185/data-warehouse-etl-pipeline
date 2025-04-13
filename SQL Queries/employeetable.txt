@@ -1,0 +1,23 @@
+10/22/2024, 7:17:51 PM
+-------------------------------------------------------------------------------------------
+"CREATE TABLE ADMIN.EMPLOYEES 
+    ( 
+     Employee_ID        NUMBER GENERATED ALWAYS AS IDENTITY 
+        ( START WITH 1 CACHE 20 ) , 
+     First_Name         VARCHAR2 (128) , 
+     Last_Name          VARCHAR2 (128) , 
+     Job_Title          VARCHAR2 (20) , 
+     Employee_Hire_Date TIMESTAMP , 
+     Store_ID           NUMBER 
+    ) 
+    LOGGING"
+Table ADMIN.EMPLOYEES created.
+
+
+10/22/2024, 7:17:51 PM
+-------------------------------------------------------------------------------------------
+"ALTER TABLE ADMIN.EMPLOYEES 
+    ADD CONSTRAINT EMPLOYEES_PK PRIMARY KEY ( Employee_ID ) 
+    USING INDEX LOGGING"
+Table ADMIN.EMPLOYEES altered.
+
